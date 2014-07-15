@@ -1,0 +1,52 @@
+
+package laptop;
+
+/**
+ *
+ * @author Mirko
+ */
+public class Laptop {
+    private String Marke; 
+    private double Diagonale;
+    private double Preis;
+    private boolean Touchscreen;
+    
+    public Laptop (String Marke,double Diagonale,double Preis,boolean Touchscreen){
+        setMarke(Marke);
+        setDiagonale(Diagonale);
+        setPreis(Preis);
+        setTouchscreen(Touchscreen);
+    }
+    
+    public void setMarke(String marke) {if( Marke != null)
+        this.Marke = marke;}
+    
+    public void setDiagonale (double Diagonale){if(Diagonale >=0)
+    {this.Diagonale = Diagonale;}else 
+    {this.Diagonale = Diagonale *0;}}
+    
+    public void setPreis(double Preis) {if(Preis >=0)
+    {this.Preis = Preis;}else 
+    {this.Preis = Preis *0;}}
+    
+    public void setTouchscreen(boolean Touchscreen){if (Touchscreen != false)
+    {this.Touchscreen = Touchscreen;}   
+        }
+
+
+    public String getMarke() {return Marke;}
+    public double getDiagonale() {return Diagonale;}
+    public double getPreis() {return Preis;}
+    public boolean getTouchscreen(){return Touchscreen;}
+
+    
+    @Override
+    public String toString(){
+        return "Marke:"+getMarke()+ "; Diagonale:"+getDiagonale() +"; Preis"+getPreis() +"€"+"; Touchscreen:"+getTouchscreen();
+    }
+
+}
+ 
+   
+    
+
