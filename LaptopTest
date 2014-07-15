@@ -1,0 +1,25 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+package laptop;
+
+/**
+ *
+ * @author Mirko
+ */
+public class LaptopTest {
+    
+    public static void main (String[] args){
+        Laptop Acer = new Laptop("Acer", 24, 275, false);
+        Laptop Sony = new Laptop("Sony", 32, 800, true);
+        Laptop Apple = new Laptop("Apple", 30, 600, false);
+    
+        System.out.println(Acer);
+        System.out.println(Sony);
+        System.out.println(Apple);
+    
+    }
+}
