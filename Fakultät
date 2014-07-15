@@ -1,0 +1,17 @@
+
+package Hausaufgaben;
+
+/**
+*
+* @author Mirko
+*/
+public class Fakultät {
+       
+static int fac(int x){
+    return x==0?1 :x*fac(x-1);
+    
+ }
+ public static void main(String[] args){
+    System.out.println("fac(16) = "+fac(16));
+    }
+}
