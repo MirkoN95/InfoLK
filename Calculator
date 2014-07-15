@@ -1,0 +1,59 @@
+package Hausaufgaben;
+import java.util.Scanner;
+/**
+*
+* @author Nico
+*/
+public class Calculator {
+    
+    public static void main(String[]args){
+        
+        
+        boolean var=true;
+        while(var)
+        {
+        
+            double var1 = 0;
+            double var2 = 0;
+            double erg = 0;
+
+            String i = null;
+            Scanner input = new Scanner(System.in);
+            
+        
+            System.out.println("Werteingabe 1:");
+            var1= input.nextDouble();
+
+            System.out.println("Werteingabe 2:");
+            var2= input.nextDouble();
+
+            System.out.println("Addition:a;Subtraktion:s;Division:d;Multiplikation:m;");
+            i = input.next();
+
+            char choice = i.charAt(0);
+
+            switch(choice)
+            {
+                case 'a' : erg= var1+var2; break;
+                case 's' : erg= var1-var2; break;
+                case 'm' : erg= var1*var2; break;
+                case 'd' : erg= var1/var2; break;
+
+            }
+
+            System.out.println("Ergebnis:" +erg);
+            
+            
+            System.out.println("Exit:e |||||| Continue:c");
+             i = input.next();
+            
+            char choice2 = i.charAt(0);
+            switch(choice2)
+                {
+                case 'c' : var=true; break;
+                case 'e' : var=false;
+            }
+        }
+    }
+    
+}
