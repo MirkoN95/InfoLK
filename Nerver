@@ -1,0 +1,20 @@
+
+package hausaufgaben;
+
+/**
+ *
+ * @author Mirko
+ */
+public class Nerver {
+    static String nerver(int x){
+        System.out.println("Noch N' Stück " + x);
+        System.out.println( x>=1 ? nerver(x+1) : "Stop");
+        return"";
+}
+
+public static void main (String args[]){
+        nerver(1);
+
+
+
+}}
