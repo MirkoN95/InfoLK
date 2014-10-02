@@ -1,0 +1,23 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+package sportabteilung;
+
+
+public class Fußball extends Mitglieder {
+    private boolean Schuhe;
+
+    public Fußball( boolean Schuhe, String NName, String AAnschrift) {
+        super(NName, AAnschrift);       
+        this.Schuhe = Schuhe;
+        
+        
+       
+    }
+
+
+
+}
