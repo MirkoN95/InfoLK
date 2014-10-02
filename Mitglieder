@@ -1,0 +1,33 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+package sportabteilung;
+
+/**
+ *
+ * @author Schüler
+ */
+public class Mitglieder {
+
+    public String Name;
+    public String Anschrift;
+    public boolean Schuhe;
+    public Mitglieder (String NName, String AAnschrift, boolean Schuhe){
+            Name=NName;
+            Anschrift=AAnschrift;
+            
+        }
+    
+    public static void main(String[] args) {
+        
+            Mitglieder m1 = new Mitglieder("Peter", "Paulinstraße",true);
+            Mitglieder m2 = new Mitglieder("Hans", "Saarstraße");
+            Mitglieder m3 = new Mitglieder("Jürgen", "Römerstraße");
+            
+        
+    }
+    
+}
